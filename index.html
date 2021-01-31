@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fractal Tree</title>
+    <style type="text/css">
+        canvas {
+            border: 1px solid black;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <sub>Depth</sub>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="14" value="1" class="slider" id="depth-slider">
+    </div>
+    <sub>Angle</sub>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="90" value="45" class="slider" id="angle-slider">
+    </div>
+    <sub>Growth Factor</sub>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="50" class="slider" id="parent-child-factor-slider">
+    </div>
+    <sub>Tree Height</sub>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="300" value="200" class="slider" id="tree-height-slider">
+    </div>
+    <canvas></canvas>
+    <script src="canvas.js"></script>
+</body>
+</html>
